@@ -16,11 +16,11 @@ import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
 
-/*fun main() {
+fun main() {
     runBlocking {
         println(Thread.currentThread().name)
     }
-}*/
+}
 /*
 
 fun main() {
