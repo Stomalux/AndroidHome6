@@ -73,9 +73,6 @@ fun main() {
                     }
 
                 println(posts)
-              //  posts.map {
-                  //  val postId = listOf(PostWithAuthor.)
-                 //   println(PostWithAuthor.) }
 
             } catch (e: Exception) {
                 e.printStackTrace()
@@ -85,21 +82,4 @@ fun main() {
     Thread.sleep(30_000L)
 }
 
-/*
-fun main() {
-    runBlocking {
-        val posts = getPosts()
 
-        val result = posts.map {
-            async {
-                PostWithComments(it, getAuthors(it.authorId),
-                    getComments(it.id).map { comment ->
-                        CommentsWithAuthor(comment, getAuthors(comment.authorId))
-                    })
-            }
-        }.awaitAll()
-
-        println(result)
-        // на выполнение данного варианта затрачивается 10 сек
-    }
-}*/
